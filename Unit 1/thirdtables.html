@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+
+<body>
+    <h1>Introduction to Tables</h1>
+    <p>Basic Tag is table tag</p>
+    <p>thead contains the heading of the tables.</p>
+    <p>further in thead can be tr for rows heading and tc for column heading. use th for headings</p>
+    <p>tbody contains the body of the tables.</p>
+    <p>further tbody contains the content of tr as per 1 and td inserts the elements in the row 1.</p>
+
+    <table border="10" bgcolor="yellow" cellpadding="20" cellspacing="15" bordercolor="images/intro.jpg">
+        <thead>
+            <tr>
+                <th rowspan="2">Roll. No.</th>
+                <th colspan="2">Name</th>
+                <th rowspan="2">Subjects</th>
+                <th rowspan="2">Grades</th>
+            </tr>
+
+            <tr>
+                <!--<th></th>-->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <!--<th></th>-->
+                <!--<th></th>-->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1. </td>
+                <td>Shekhar</td>
+                <td>Sharma</td>
+                <td>HTML</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>1. </td>
+                <td>Kavya</td>
+                <td>Singh</td>
+                <td>CSS</td>
+                <td>O</td>
+            </tr>
+
+            <tr>
+                <td>3. </td>
+                <td>Anmol</td>
+                <td>Gupta</td>
+                <td>JS</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>4. </td>
+                <td>Aditya</td>
+                <td>Shekhawat</td>
+                <td>Python</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <form action=""> <!--action is used to redirect where after clicking submit-->
+        <label for="uname">Enter Name:</label>
+        <input type="text" name="uname" id="uname" size="30" maxlength="5" placeholder="Enter Name" value="Ria">
+        <br>
+        <br>
+        <label for="pass">Enter Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter Password">
+
+        <br><br>
+
+        <label for="email1">Enter Email:</label>
+        <input type="email" name="email1" id="email1" required>
+        <br><br>
+
+        <input type="submit" name="submitform" id="submitform" value="Submit Form">
+
+        <label for="review"></label>
+        <!--get and post method to avoid url problem and write a review box with submit feedback-->
+
+        <label for="review">Write a Review</label>
+        <textarea name="review" id="review" rows="6" cols="40"></textarea>
+
+        <br><br>
+        <label for="hobby">Choose your hobby: </label>
+        <input type="checkbox" name="hobby" id="hobby" value="Cook">Cooking
+        <input type="checkbox" name="hobby" id="hobby" value="Journal">Reading Journals
+        <input type="checkbox" name="hobby" id="hobby" value="Sing">Singing
+
+        <br><br>
+        <!--in dataset or code if no value is set it will display ON (empty) on php / database side else the value which is set or assigned-->
+        <br><br>
+
+        <label for="pro">Select your porgramme:</label>
+        <!--When we click on radio button ony then it will be selected but for text we need to link it with it using id, i.e. usko label  tag mai daldo btech ko aur id btech kardo-->
+        <!--Normal: <input type = "radio" name="pro" id="pro">B.Tech.     
+        <input type="radio" name="pro" id="pro">BCA
+        <input type="radio" name="pro" id="pro" checked>BPT <Agar phle se hi koi check karwana ho to> -->
+
+        <input type="radio" name="pro" id="btech" value="btech"> <!--will display btech else ON-->
+        <label for="btech">B.Tech.</label>
+        <input type="radio" name="pro" id="bca" value="BCA"> <!--will display on-->
+        <label for="bca">BCA</label>
+        <input type="radio" name="pro" id="bb" value="BPT">
+        <label for="bb">BPT</label>
+
+        <br><br>
+        <!--for select box or dropdown list-->
+
+        <label for="statesel">Select State: </label>
+
+        <select name="statesel" id="statesel" size="2" multiple>
+            <option value="choosest">Choose your state</option>
+            <option value="pb">Punjab</option>
+            <option value="hr">Haryana</option>
+            <option value="hp">Himachal Pradesh</option>
+            <option value="uk">Uttarakhand</option>
+        </select>
+
+        <br><br>
+
+        <label for="filesel">Choose File: </label>
+        <input type="file" name="filesel" id="filesel" accept="image/*"> <!--Select or accepts only images-->
+
+        <br><br>
+        
+        <input type="submit" name="submitform" id="submitform" value="Submit Form">
+        <input type="reset" name="resetfile" id="resetfile" value="Reset Form">
+        <input type="image" name="imagesel" id="imagesel" src="images/submit.png" width="100" height="40">  <!-- you can also use relative path method for image-->
+
+
+    </form>
+</body>
+
+</html>
